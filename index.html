@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Color Picker Game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="menu" class="menu">
+        <div class="combo">
+            <div>
+                <img src="./img_colormap.gif" alt="icon" height="180px" width="180px">
+            </div>
+            
+            <h1>Color Match Game</h1>
+        </div>
+        
+        <button onclick="startGameScreen()">Start Game</button>
+        <button onclick="showHighScore()">High Score</button>
+        <button onclick="resetHighScore()">Reset High Score</button>
+        <button onclick="toggleSound()">Toggle Sound</button>
+        <button onclick="showGameRules()">Game Rules</button>
+    </div>
+
+    <div id="game" class="container hidden">
+        <h2>Pick the Correct Color!</h2>
+        <div id="colorBox" class="color-box" data-testid="colorBox"></div>
+        <div class="buttons" id="colorOptions" data-testid="colorOption"></div>
+        <p class="message" id="message"></p>
+        <p class="score">Score: <span id="score">0</span></p>
+        <p class="score">High Score: <span id="highScore">0</span></p>
+        <button class="new-game-btn" onclick="startGame()">New Game</button>
+        <button class="new-game-btn" onclick="backToMenu()">Back to Menu</button>
+    </div>
+    
+    <script src="./main.js"></script>
+</body>
+</html>
