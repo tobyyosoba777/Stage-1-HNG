@@ -20,17 +20,17 @@
         <button onclick="showHighScore()">High Score</button>
         <button onclick="resetHighScore()">Reset High Score</button>
         <button onclick="toggleSound()">Toggle Sound</button>
-        <button onclick="showGameRules()">Game Rules</button>
+        <button onclick="showGameRules()" data-testid="gameInstructions">Game Rules</button>
     </div>
 
     <div id="game" class="container hidden">
         <h2>Pick the Correct Color!</h2>
         <div id="colorBox" class="color-box" data-testid="colorBox"></div>
         <div class="buttons" id="colorOptions" data-testid="colorOption"></div>
-        <p class="message" id="message"></p>
-        <p class="score">Score: <span id="score">0</span></p>
+        <p class="message" id="message" data-testid="gameStatus"></p>
+        <p class="score" data-testid="score">Score: <span id="score" data-testid="score">0</span></p>
         <p class="score">High Score: <span id="highScore">0</span></p>
-        <button class="new-game-btn" onclick="startGame()">New Game</button>
+        <button class="new-game-btn" onclick="startGame()" data-testid="newGameButton">New Game</button>
         <button class="new-game-btn" onclick="backToMenu()">Back to Menu</button>
     </div>
     
