@@ -35,7 +35,7 @@ let colors = ["red", "blue", "green", "yellow", "purple", "orange"];
             let message = document.getElementById("message");
             if (selectedColor === targetColor) {
                 message.innerText = "Correct! 🎉";
-                score++;
+                score+= 5;
                 if (score > highScore) {
                     highScore = score;
                     localStorage.setItem("highScore", highScore);
