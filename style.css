@@ -54,15 +54,16 @@ img {
     margin: 10px 0;
     border: none;
     background: #cf9f00;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 1.3em;
     border-radius: 38px;
     cursor: pointer;
     transition: background 0.3s, transform 0.2s;
 }
 .menu button:hover {
-    background: #262900;
+    background: #232506;
     transform: scale(1.05);
+    color: white;
 }
 .container {
     max-width: 600px;
